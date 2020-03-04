@@ -12,14 +12,16 @@
 		<link rel="shortcut icon" href="img/icon/chrome.ico" type="image/x-icon" />
 	</head>
 	<body>
-		<div id="boot" style="width: 100%;height: 100%;text-align: center;background-color: black ;position: absolute;z-index: 100;">
-			<img id="windows_logo" src="./img/Windows_logo.svg" style="height: 16%; margin-top: 23%;"/>
-			<div class='loader' style="width: 5%; margin-top: 10%;text-align: center;">
-				<div class='circle'></div> <div class='circle'></div> <div class='circle'></div> <div class='circle'></div> <div class='circle'></div>
+		<div id="boot" style="width: 100%;height: 100%;text-align: center;background-color: black;position: absolute;z-index: 100;">
+			<div id="innerboot">
+				<div><img id="windows_logo" src="./img/Windows_logo.svg" style="height: 16%; margin-top: 7%;"/></div>
+				<div class='loader'>
+					<div class='circle'></div> <div class='circle'></div> <div class='circle'></div> <div class='circle'></div> <div class='circle'></div>
+				</div>
 			</div>
 		</div>
-		<div id="login" style="width: 100%;height: 100%; position: absolute;z-index: 99;"></div>
-		<div id="window1" class="window" style="background-color: black;width: 100%;height: 100%;position: absolute;z-index: 1;"></div>
-		<div id="desktop"></div>
+		<div id="login"></div>
+		<div id="window1" style="background-color: black;width: 100%;height: 100%;position: absolute;z-index: 1;"></div>
+		<div id="desktop" hidden="hidden"></div>
 	</body>
 </html>

@@ -1,19 +1,14 @@
 
 var end_load_login = false;
 var end_load_desktop = false;
-setTimeout("goto_login()" , 5000);
+//setTimeout("goto_login()" , 5000);
 var start_time = new Date();
 $(document).ready(function load_desktop(){
     $("#boot").contextmenu(function(){return false;});
     $("#login").contextmenu(function(){return false;});
     $("#window1").contextmenu(function(){return false;});
-    $("#login").hide();
-    $("#desktop").hide();
+
     
-    $("#desktop").css("background-image","url(img/windows_10_wallpaper.jpg)");
-    $("#desktop").css("background-size","100% 100%");
-    $("#desktop").css("background-repeat","no-repeat");
-//  $("#desktop").css("background-position","center");
 
     $( "#login" ).load( "login.html", function( response, status, xhr ) {
         if ( status == "error" ) {

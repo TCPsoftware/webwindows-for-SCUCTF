@@ -1,7 +1,7 @@
 
 var end_load_login = false;
 var end_load_desktop = false;
-//setTimeout("goto_login()" , 5000);
+setTimeout("goto_login()" , 5000);
 var start_time = new Date();
 $(document).ready(function load_desktop(){
     $("#boot").contextmenu(function(){return false;});

@@ -16,7 +16,7 @@ html,body,#desktop{
 	text-align: center;
 	width: 50%;
 	height: 50%;
-	border: 1px solid red;
+	/*border: 1px solid red;*/
 }
 #login{
 	user-select: none;
